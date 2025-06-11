@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game instructions</title>
+    <link rel="stylesheet" href="./css-files/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="instructions-menu">
+        <h1>Memory Game</h1>
+        <a href="html-files/game.html" target="_blank">Enter game <i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+
+    <div id="instruction-div">
+        <h3 id="instruction-heading">Instructions</h3>
+        <h4 class="h4-headings">Objective:</h4>
+        <p class="instruction-p">Remember and correctly enter a sequence of 10 numbers shown one by one.</p>
+        <h4 class="h4-headings">How to Play:</h4>
+        <p class="instruction-p">1. The game will display 10 random numbers, one at a time.</p>
+        <p class="instruction-p">2. Focus and try to memorize each number as it appears — they won’t be shown again!</p>
+        <p class="instruction-p">3. After all 10 numbers are shown, you’ll see 10 input fields.</p>
+        <p class="instruction-p">4. You have 30 seconds to enter the numbers in the exact same order they were displayed.</p>
+        <p class="instruction-p">5. When you're done, click the “Finish” button to submit your answers.</p>
+        <h4 class="h4-headings">Scoring & Rewards:</h4>
+        <p class="instruction-p">You’ll earn points for each correct number in the correct position.</p>
+        <p class="instruction-p">If you get 8, 9, or 10 correct, you’ll receive a special reward! 🏆</p>
+        <div id="two-as">
+            <a href="#detailed-instruction-parent" class="detailed-evaluation">Detailed</a>
+            <a href="#reward-image-section" class="detailed-evaluation">Evaluation</a>
+        </div>
+    </div>
+
+    <div id="detailed-instruction-parent">
+        <div class="detailed-instruction-child">
+            <img src="./instruction-images/difficulty.png" alt="image">
+            <p class="detailed-ins-p">
+                Difficulty Options: <br>
+                You can choose from four difficulty levels: Easy, Medium, Hard, and Very Hard.<br><br>
+                Easy: Displays single-digit numbers.<br>
+                Medium: Displays two-digit numbers.<br>
+                Hard: Displays three-digit numbers.<br>
+                Very Hard: Displays four-digit numbers.<br>
+            </p>
+        </div>
+        <div class="detailed-instruction-child">
+            <img src="./instruction-images/start-button.png" alt="image">
+            <p class="detailed-ins-p">Start Button: <br>
+                When you click the Start button, the game will begin after a 3-second countdown
+            </p>
+        </div>
+        <div class="detailed-instruction-child">
+            <img src="./instruction-images/big-screen.png" alt="image">
+            <p class="detailed-ins-p">
+                Number Display: <br>
+                10 numbers will be shown one by one during the game.
+            </p>
+        </div>
+        <div class="detailed-instruction-child">
+            <img src="./instruction-images/entering-inputs.png" alt="image">
+            <p class="detailed-ins-p">
+                Enter the 10 numbers you saw, in the correct order. You have 30 seconds to complete this.
+                Once you're done, click the Finish and Check button to submit your answers.
+            </p>
+        </div>
+        <div class="detailed-instruction-child">
+            <img src="./instruction-images/see-reward.png" alt="image">
+            <p class="detailed-ins-p">Here is the "See Reward" button, where you can view and claim your reward.</p>
+        </div>
+    </div>
+
+
+    <div id="reward-image-section">
+        <div id="elephant-section">
+            <img src="./animals-images/elephant.jpg" alt="elephant">
+            <p>If a player successfully identifies 8 to 10 correct answers in the 'Very Hard' four-digit mode, they will be awarded the prestigious title of Elephant — the highest honor in the Animal Kingdom for memory strength. Elephants are scientifically recognized as the number 1 animal in terms of memory, making this status a true mark of exceptional cognitive skill.</p>
+        </div>
+        <div id="dolphin-section">
+            <img src="./animals-images/dolphin.jpg" alt="dolphin">
+            <p>If a player successfully finds 8 to 10 correct answers in the 'Hard' three-digit mode, they will earn the distinguished title of Dolphin — a symbol of remarkable memory and intelligence. Dolphins are ranked 2nd in the Animal Kingdom for memory strength, making this status a true recognition of sharp cognitive ability and focus.</p>
+        </div>
+        <div id="chimpanzee-section">
+            <img src="./animals-images/chimpanzee.jpg" alt="chimpanzee">
+            <p>If a player manages to find 8 to 10 correct answers in the 'Medium' two-digit mode, they will be awarded the title of Chimpanzee — a symbol of advanced memory and problem-solving skills. Ranked 3rd in the Animal Kingdom for memory strength, chimpanzees are known for their sharp minds and impressive recall abilities, making this status a mark of growing mastery.</p>
+        </div>
+        <div id="parrot section">
+            <img src="./animals-images/parrot.jpg" alt="parrot">
+            <p>If a player successfully finds 8 to 10 correct answers in the 'Easy' one-digit mode, they will earn the title of Parrot — a symbol of quick recall and sharp attention. Parrots are ranked 4th in the Animal Kingdom for memory strength, celebrated for their ability to remember sounds, patterns, and even words. This status reflects a solid foundation in memory development.</p>
+        </div>
+    </div>
+</body>
+</html>
