@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css-files/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--game big div-->
+    <div>
+
+        <!--choose difficulty section and see reward-->
+        <div id="difficulty-reward-div">
+            <!--choose difficulty-->
+            <div class="difficulty-div">
+                <label for="difficulty" id="difficulty-label">Choose difficulty</label>
+                <select name="difficulty" id="difficulty">
+                    <option value="0">Unselected</option>
+                    <option value="1">Easy (0)</option>
+                    <option value="2">Medium (00)</option>
+                    <option value="3">Hard (000)</option>
+                    <option value="4">Very hard (0000)</option>
+                </select>
+            </div>
+            <!--/choose difficulty-->
+
+            <!--start button-->
+            <button id="start-button">Start</button>
+            <!--/start button-->
+
+            <!--see reward-->
+            <div class="see-reward-div">
+                <a href="#reward-animation-div-parent" id="see-reward-a">See reward</a>
+            </div>
+            <!--/see reward-->
+        </div>
+        <!--/choose difficulty section and see reward-->
+
+
+        <!--game main body-->
+        <div id="main-body-big-div">
+            <!--showing number div-->
+            <div id="showing-num-div">
+                <h3 class="main-body-headings">Random numbers are shown here</h3>
+                <input type="text" id="showing-num-input" readonly>
+                <!--small result announcer-->
+                <div id="result-shown"></div>
+                <!--/small result announcer-->
+            </div>
+            <!--/showing number div-->
+
+
+
+            <!--entering number div-->
+            <div id="entering-num-div">
+                <h3 class="main-body-headings">You can enter numbers here</h3>
+                <!--every input divs parent-->
+                <div id="inputing-div">
+                    <div>
+                        <!--every input divs-->
+                        <div id="enter-input-div-1">
+                            <input type="number" class="entering-num-inputs" placeholder="    1-number" id="enter-input-1" readonly>
+                        </div>
+                        <div id="enter-input-div-2">
+                            <input type="number" class="entering-num-inputs" placeholder="    2-number" id="enter-input-2" readonly>
+                        </div>
+                        <div id="enter-input-div-3">
+                            <input type="number" class="entering-num-inputs" placeholder="    3-number" id="enter-input-3" readonly>
+                        </div>
+                        <div id="enter-input-div-4">
+                            <input type="number" class="entering-num-inputs" placeholder="    4-number" id="enter-input-4" readonly>
+                        </div>
+                        <div id="enter-input-div-5">
+                            <input type="number" class="entering-num-inputs" placeholder="    5-number" id="enter-input-5" readonly>
+                        </div>
+                        <div id="enter-input-div-6">
+                            <input type="number" class="entering-num-inputs" placeholder="    6-number" id="enter-input-6" readonly>
+                        </div>
+                        <div id="enter-input-div-7">
+                            <input type="number" class="entering-num-inputs" placeholder="    7-number" id="enter-input-7" readonly>
+                        </div>
+                        <div id="enter-input-div-8">
+                            <input type="number" class="entering-num-inputs" placeholder="    8-number" id="enter-input-8" readonly>
+                        </div>
+                        <div id="enter-input-div-9">
+                            <input type="number" class="entering-num-inputs" placeholder="    9-number" id="enter-input-9" readonly>
+                        </div>
+                        <div id="enter-input-div-10">
+                            <input type="number" class="entering-num-inputs" placeholder="    10-number" id="enter-input-10" readonly>
+                        </div>
+                        <!--/every input divs-->
+
+                        <!--Finish button-->
+                        <button class="finish-btn" id="finish-btn">Finish and check</button>
+                        <!--/Finish button-->
+                        <span id="timer-span"></span>
+                    </div>
+                    <!--/every input divs parent-->
+                </div>
+            </div>
+            <!--/entering number div-->
+        </div>
+        <!--/game main body-->
+
+    </div>
+    <!--/game big div-->
+
+
+    <!--reward-->
+    <div id="reward-animation-div-parent">
+        <div id="reward-animation-image-div">
+            <img alt="image" id="reward-animation-image" src="../animals-images/failure.png">
+        </div>
+        <div id="reward-animation-text-div">
+            <p id="reward-animation-text">Sorry, you can not get rewarded. You did not obtain enough points or even did not play the game.</p>
+        </div>        
+    </div>
+    <!--/reward-->
+
+
+
+    <script src="../js-files/game.js"></script>
+</body>
+</html>
