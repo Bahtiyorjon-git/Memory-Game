@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+#instructions-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1e2a38; /* qoramtir fon */
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#instructions-menu h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#instructions-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#instructions-menu a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#instructions-menu i {
+    margin-left: 8px;
+}
+
+
+#instruction-div {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+#instruction-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #1e3a8a; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+.h4-headings {
+    font-size: 20px;
+    color: #1e40af;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.instruction-p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #60a5fa; /* Blue line */
+    background-color: #e0f2fe; /* Lighter background for steps */
+    border-radius: 8px;
+}
+
+.detailed-evaluation {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.detailed-evaluation:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#two-as {
+    margin: 20px 10px;
+}
+
+
+#detailed-instruction-parent {
+    background-color: #111; /* Dark black-like background */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.detailed-instruction-child {
+    background-color: #ff8400; /* Slightly lighter black for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.detailed-instruction-child:hover {
+    transform: scale(1.03);
+}
+
+.detailed-instruction-child img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #1e1d1c; /* in case image has transparency */
+    margin-bottom: 12px;
+}
+
+.detailed-ins-p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+#reward-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#reward-image-section > div {
+    flex: 1 1 300px;
+    max-width: 320px;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+#reward-image-section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#reward-image-section p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}

@@ -1,0 +1,293 @@
+/* Umumiy sozlamalar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Yuqoridagi menyu (difficulty + tugmalar) */
+#difficulty-reward-div {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.difficulty-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#difficulty-label {
+    margin-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#difficulty {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #8a2be2, #da70d6);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#start-button:hover {
+    background: linear-gradient(to right, #6a1cb2, #b85ec4);
+}
+
+.see-reward-div a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.see-reward-div a:hover {
+    background-color: #0056b3;
+}
+
+/* O‘yin asosiy tanasi */
+#main-body-big-div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Har bir katta blok */
+#showing-num-div,
+#entering-num-div {
+    background-color: #91dbf9;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    border: 2px solid black;
+}
+
+/* Sarlavhalar */
+.main-body-headings {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#result-shown {
+    font-size: 40px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+/* Ko‘rsatilgan raqam input */
+#showing-num-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 100px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    height: 40%;
+}
+
+/* Kirish inputlari */
+.entering-num-inputs {
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* Tugma */
+.finish-btn {
+    width: 40%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finish-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+    #main-body-big-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #difficulty-reward-div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .see-reward-div a,
+    #start-button,
+    #difficulty {
+        width: 100%;
+        text-align: center;
+    }
+
+    #entering-num-div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 561px){
+    #showing-num-div,
+    #entering-num-div {
+    width: 100%;
+}
+}
+
+.fa-fade {
+    font-size: 35px;
+    margin: 2px 10px;
+}
+
+#timer-span {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.fa-circle-exclamation {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+#reward-animation-div-parent {
+    position: relative;
+    width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #0f0f0f, #1e1e1e);
+    border-radius: 25px;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    perspective: 1500px;
+    animation: enterSpin 2s ease-out forwards;
+    transform-style: preserve-3d;
+    font-family: sans-serif;
+}
+
+#reward-animation-image-div {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+    animation: imagePulse 3s ease-in-out infinite alternate;
+    transform-style: preserve-3d;
+}
+
+#reward-animation-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+#reward-animation-image-div:hover #reward-animation-image {
+    transform: scale(1.08) rotateY(5deg);
+}
+
+#reward-animation-text-div {
+    margin-top: 30px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 100, 200, 0.4);
+    animation: slideInGlow 1.5s ease-out forwards;
+}
+
+#reward-animation-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ENTRY ANIMATION */
+@keyframes enterSpin {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg) scale(0.5) translateY(-100px);
+    }
+    50% {
+        opacity: 1;
+        transform: rotateY(-50deg) scale(1.05) translateY(10px);
+    }
+    100% {
+        transform: rotateY(0deg) scale(1) translateY(0);
+    }
+}
+
+/* TEXT ENTRY */
+@keyframes slideInGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+        box-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        box-shadow: 0 0 30px rgba(255, 0, 150, 0.5);
+    }
+}
+
+/* IMAGE GLOW */
+@keyframes imagePulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        transform: rotateX(-30deg) rotateY(-30deg);
+    }
+    100% {
+        box-shadow: 0 0 50px rgba(255, 255, 0, 0.4);
+        transform: rotateX(30deg) rotateY(30deg);
+    }
+}
